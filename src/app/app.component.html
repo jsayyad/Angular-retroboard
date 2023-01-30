@@ -1,0 +1,22 @@
+<div class="container main">
+  <div class="row text-center"><h1>Retrospective</h1></div>
+  <div class="row">
+    <ng-container *ngFor="let item of retroData">
+      <div class="col-md-6 retroCategory">
+        <h4>
+          {{ item.name }}
+          <sup>
+            <button type="button" class="cardButton" (click)="addCard(item.id)">
+              +
+            </button>
+          </sup>
+        </h4>
+        <card
+          [Id]="item.id"
+          [carddata]="item.data"
+          (EnterSave)="saveCardDescription($event)"
+        ></card>
+      </div>
+    </ng-container>
+  </div>
+</div>

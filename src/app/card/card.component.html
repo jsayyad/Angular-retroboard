@@ -1,0 +1,29 @@
+<ng-container *ngFor="let card of carddata; let i = index">
+  <div class="cardDisplay">
+    <div
+      class="card"
+      [ngClass]="
+        Id === 1
+          ? 'orange'
+          : Id === 2
+          ? 'lightblue'
+          : Id === 3
+          ? 'lightgreen'
+          : 'yellow'
+      "
+    >
+      <div class="card-body">
+        <div
+          class="card-text scrollbars content"
+          contenteditable="true"
+          (keyup.enter)="onEnterSave($event, i)"
+        >
+          <ng-content></ng-content>
+        </div>
+      </div>
+      <div class="card-footer text-muted">
+        <span (click)="IncrementLikes(card)">+</span>{{ card.likes }}
+      </div>
+    </div>
+  </div>
+</ng-container>

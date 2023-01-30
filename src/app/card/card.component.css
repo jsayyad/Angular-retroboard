@@ -1,0 +1,31 @@
+.cardDisplay {
+  display: inline-flex;
+}
+
+.card {
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 180px;
+  height: 150px;
+}
+
+div.scrollbars {
+  height: 80px;
+  overflow: auto;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.lightblue {
+  background-color: lightblue;
+}
+
+.lightgreen {
+  background-color: lightgreen;
+}
+
+.yellow {
+  background-color: yellow;
+}

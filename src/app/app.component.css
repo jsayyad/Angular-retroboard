@@ -1,0 +1,22 @@
+.cardButton {
+  border-radius: 50%;
+  background-color: greenyellow;
+  height: 30px;
+  width: 30px;
+  border: none;
+  box-shadow: none;
+  font-weight: 700;
+}
+
+.retroCategory {
+  margin-bottom: 25px;
+  margin-top: 30px;
+}
+
+.retroCategory h4 {
+  text-align: center;
+}
+
+.main {
+  background-color: lightgray;
+}
